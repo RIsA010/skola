@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Registration System</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Registration System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="registerLink">Register</a></li>
+                    <li><a href="#" id="loginLink">Login</a></li>
+                    <li><a href="#" id="usersListLink">Users List</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="registerForm" class="form-section">
+            <h2>Registration Form</h2>
+            <form id="registrationForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <button type="button" onclick="registerUser()">Register</button>
+            </form>
+        </section>
+
+        <section id="loginForm" class="form-section">
+            <h2>Login Form</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required>
+
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+
+                <button type="button" onclick="loginUser()">Login</button>
+            </form>
+        </section>
+
+        <section id="usersList" class="content-section">
+            <h2>Users List</h2>
+            <div id="usersListContent"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
